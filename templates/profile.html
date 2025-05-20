@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Profile</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/profile.js" defer></script>
+<body>
+  <header>
+    <h1>Welcome, {{ username }}!</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/jobs">Jobs</a></li>
+        <li><a href="/profile">Profile</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/logout">Log Out</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Your Saved Jobs</h2>
+
+    <section>
+      <h3>❤️ Liked Jobs</h3>
+      <div id="liked-jobs">
+        <p>Loading liked jobs...</p>
+      </div>
+    </section>
+
+    <section>
+      <h3>📌 Saved Jobs</h3>
+      <div id="saved-jobs">
+        <p>Loading saved jobs...</p>
+      </div>
+    </section>
+
+    <section>
+      <h3>👎 Disliked Jobs</h3>
+      <div id="disliked-jobs">
+        <p>Loading disliked jobs...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><a href="/">Back to Home</a></p>
+  </footer>
+</body>
+</html>

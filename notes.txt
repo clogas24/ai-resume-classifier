@@ -1,0 +1,11 @@
+1. virtual enviro
+source venv/bin/activate
+
+2. look at active server and kill it
+ps -u clogas | grep python
+kill <PID>
+
+3. start Flask
+nohup python app.py &
+
+4. Hosted at http://130.74.96.8:8123/

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <ul>
+        {% if session.user_id %}
+          <li><a href="/">Home</a></li>
+          <li><a href="/jobs">Jobs</a></li>
+          <li><a href="/profile">Profile</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/logout">Log Out</a></li>
+        {% else %}
+          <li><a href="/signup">Sign Up</a></li>
+          <li><a href="/login">Login</a></li>
+          <li><a href="/contact">Contact</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <p>Email at clogas@go.olemiss.edu for questions!</p>
+  </main>
+
+  <footer>
+    <p><a href="/">Back to Home</a></p>
+  </footer>
+</body>
+</html>

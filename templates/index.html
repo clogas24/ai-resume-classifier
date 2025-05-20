@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - AI Resume Classifier</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>AI Resume Classifier</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/jobs">Jobs</a></li>
+        <li><a href="/profile">Profile</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/logout">Log Out</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Welcome!</h2>
+      <p>This app uses AI to classify your resume and help connect you to the right job field.</p>
+      <p>Paste or upload your resume below to get started:</p>
+    </section>
+
+    <section class="classifier">
+      <h3>Resume Classifier</h3>
+
+      <textarea id="resumeInput" placeholder="Paste resume text here..."></textarea>
+      <button onclick="classifyResume()">Predict Job Category</button>
+
+      <p>Or upload a PDF resume:</p>
+      <input type="file" id="resumeFile" accept=".pdf" />
+      <button onclick="uploadPDF()">Upload and Predict</button>
+
+      <div id="result" class="result"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AI Resume Classifier | Carson Logas</p>
+  </footer>
+</body>
+</html>
