@@ -1,0 +1,16 @@
+# Bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual env
+venv/
+
+# Env files
+.env
+
+# Flask instance
+instance/
+
+# Logs & OS junk
+nohup.out
+.DS_Store
