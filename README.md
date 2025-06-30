@@ -114,6 +114,4 @@ SeniorProject/
 
 ---
 
-## ⚖️ License
-
-This project is released under the MIT License. For details, see [LICENSE](LICENSE) or use this code for educational purposes only.
+This project is for educational purposes only
