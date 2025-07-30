@@ -18,7 +18,7 @@ model = joblib.load('resume_classifier_model.pkl')
 vectorizer = joblib.load('tfidf_vectorizer.pkl')
 
 app = Flask(__name__)
-app.secret_key = "clogas"
+app.secret_key = "clogas" #yes i know this is bad, i couldnt be bothered to fix it since school is done
 
 def login_required(route_func):
     @wraps(route_func)
@@ -177,7 +177,7 @@ def get_remote_jobs():
     }
 
     headers = {
-        "x-rapidapi-key": "db69f64e3cmshafb87221313df6ep116495jsn98638a118ec7",
+        "x-rapidapi-key": "db69f64e3cmshafb87221313df6ep116495jsn98638a118ec7", #yes i know this is bad, i couldnt be bothered to fix it since school is done
         "x-rapidapi-host": "jsearch.p.rapidapi.com"
     }
 
